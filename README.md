@@ -1,5 +1,7 @@
 # Gaming Product Metrics Analysis
 
+SQL and Tableau product analytics project focused on gaming revenue dynamics, churn, contraction, cohort retention, and revenue drivers behind the November 2022 revenue drop.
+
 ## Project Overview
 
 This project analyzes monthly revenue dynamics for a gaming product using SQL and Tableau.
@@ -12,7 +14,10 @@ The main goal was to investigate the revenue drop in November 2022 and understan
 * **SQL** — cohort analysis, revenue decomposition, churn and contraction logic
 * **Tableau Public** — dashboard creation and data visualization
 
-## Dataset
+---
+
+<details>
+  <summary><b>Dataset</b></summary>
 
 The analysis is based on payment transactions and paid user attributes.
 
@@ -23,7 +28,10 @@ Main tables:
 
 Transactional data was aggregated to the user-month level to analyze monthly revenue behavior.
 
-## Business Questions
+</details>
+
+<details>
+  <summary><b>Business Questions</b></summary>
 
 The analysis focused on the following questions:
 
@@ -34,7 +42,10 @@ The analysis focused on the following questions:
 * Which user segments contribute the most to revenue losses?
 * Can payment contraction be used as an early warning signal before churn?
 
-## Analysis Approach
+</details>
+
+<details>
+  <summary><b>Analysis Approach</b></summary>
 
 The project includes:
 
@@ -50,7 +61,28 @@ The project includes:
 * Cohort analysis by users and revenue
 * ARPPU and observed lifetime trend analysis
 
-## Key Findings
+</details>
+
+---
+
+## Dashboard Preview
+
+### Revenue and Drivers
+
+![Revenue and Drivers](images/revenue-drivers.png)
+
+### Losses by Segment
+
+![Losses by Segment](images/losses-by-segment.png)
+
+### Cohort Analysis
+
+![Cohort Analysis](images/cohort-analysis.png)
+
+---
+
+<details>
+  <summary><b>Key Findings</b></summary>
 
 1. **The November revenue drop was not explained by a mass exodus of whale users only.**
    Losses were distributed across several user segments, not only the Whale segment.
@@ -73,21 +105,10 @@ The project includes:
 7. **The revenue decline appears to be a complex issue, not a single-factor problem.**
    It is likely connected not only to churn, but also to incoming traffic quality, monetization quality of existing users, customer base retention, and payment contraction as a possible early warning signal before churn.
 
-## Dashboard Preview
+</details>
 
-### Revenue and Drivers
-
-![Revenue and Drivers](images/revenue-drivers.png)
-
-### Losses by Segment
-
-![Losses by Segment](images/losses-by-segment.png)
-
-### Cohort Analysis
-
-![Cohort Analysis](images/cohort-analysis.png)
-
-## Recommendations
+<details>
+  <summary><b>Recommendations</b></summary>
 
 ### Additional Data to Collect
 
@@ -140,12 +161,22 @@ The project includes:
 5. **Do not focus only on Whale users**
    Medium and High users also contributed significantly to revenue losses, so retention and monetization actions should cover several valuable segments.
 
-## Limitations
+</details>
 
+<details>
+  <summary><b>Limitations</b></summary>
+
+* The dataset does not include acquisition channels, marketing campaign data, in-game events, or pricing changes.
 * December churn should be interpreted carefully because it is the last available month in the dataset.
 * Later cohorts have shorter observation windows, so cohort comparisons should be made at the same cohort age.
 
-## Tableau Dashboard
+</details>
 
-View the interactive dashboard on Tableau Public:
+---
+
+## Project Files
+
+* [SQL query](SQL/gaming_product_metrics.sql)
+* View the interactive dashboard on Tableau Public:
 [Tableau Public Dashboard](https://public.tableau.com/app/profile/.88467722/viz/productanalysis_17814726284760/LossesbySegment)
+
