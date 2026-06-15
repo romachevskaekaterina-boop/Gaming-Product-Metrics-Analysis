@@ -176,7 +176,6 @@ The project includes:
 
 ## Project Files
 
-* [SQL query](SQL/gaming_product_metrics.sql)
-* View the interactive dashboard on Tableau Public:
-[Tableau Public Dashboard](https://public.tableau.com/app/profile/.88467722/viz/productanalysis_17814726284760/LossesbySegment)
+* [SQL query](sql/gaming_product_metrics.sql)
+* [Tableau Public Dashboard](https://public.tableau.com/app/profile/.88467722/viz/productanalysis_17814726284760/LossesbySegment)
 
