@@ -94,7 +94,7 @@ The project includes:
    Churn was more visible by user count among Low and Medium users, while contraction losses were more financially significant among High and Whale users.
 
 4. **Contraction should be monitored separately from churn.**
-   High-value users did not always leave immediately, but their payments decreased. This means that revenue risk can appear before full churn.
+   high-value users did not always leave immediately, but their payments decreased. This means that revenue risk can appear before full churn.
 
 5. **User retention and revenue retention were not synchronized.**
    Some cohorts retained a relatively good share of users but generated much less revenue over time. For example, the April cohort still retained users, but its revenue retention dropped sharply after the first months.
